@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 import sys
 
-def load_input_as_ints():
+def load_input_as_list():
     with open(sys.argv[1]) as f:
-        return list(map(int, f.read().split("\n")))
+        return f.read().split("\n")
+
+def load_input_as_ints():
+    return list(map(load_input_as_list()))
