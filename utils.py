@@ -7,3 +7,6 @@ def load_input_as_list():
 
 def load_input_as_ints():
     return list(map(load_input_as_list()))
+
+def flatten(t):
+    return [item for sublist in t for item in sublist]
