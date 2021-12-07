@@ -21,7 +21,6 @@ def step(popualtion):
     }
     new_pop[8] = pop0
     new_pop[6] = new_pop[6] + pop0
-
     return new_pop
 
 
